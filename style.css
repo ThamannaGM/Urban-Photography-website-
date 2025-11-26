@@ -1,7 +1,7 @@
 /* Site-wide background and font setup */
 body {
     margin: 0;
-    background: url("../media/BG.png");
+    background: url("BG.png");
     background-size: cover;
     font-family: 'Lucida Sans', sans-serif;
     color: #fff;
@@ -895,3 +895,4 @@ header p {
     left: 0;
     letter-spacing: 1px;
 }
+
