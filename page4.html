@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets character encoding and ensures responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown on browser tab -->
+    <title>Submit Your Work</title>
+
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+
+    <!-- Navigation bar with links to other pages -->
+    <nav class="navbar">
+
+        <!-- Left side logo -->
+        <div class="nav-left"><img src="./assets/media/logo.png" alt="Logo"></div>
+
+        <!-- Navbar title -->
+        <div class="nav-title">Urban Photography</div>
+
+        <!-- Mobile menu toggle checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Hamburger icon for mobile menu -->
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Gallery</a></li>
+            <li><a href="page3.html">Guides</a></li>
+            <li><a href="page4.html">Submit Your Work</a></li>
+            <li><a href="references.html">Our References</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Intro section explaining the submission process -->
+    <section class="page-intro">
+        <h1 class="tagline">Share Your Urban Vision.</h1>
+
+        <!-- Short description inviting users to submit -->
+        <p class="description">
+            Got a captivating urban shot? We want to see it!
+        </p>
+
+        <p class="description">
+            Submit your best work here for a chance to be featured in our gallery and share your unique perspective with the world.
+        </p>
+    </section>
+
+    <!-- Main submission form container -->
+    <main class="submission-container">
+        <h2>Image Submission Form</h2>
+
+        <!-- Form for uploading photo submissions -->
+        <form action="#" method="POST" enctype="multipart/form-data">
+
+            <!-- Photo title input -->
+            <div class="form-group">
+                <label for="title">Photo Title: (Input type: text)</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <!-- Email input for submitter contact -->
+            <div class="form-group">
+                <label for="email">Email Address: (Input type: email)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- File input for uploading the image -->
+            <div class="form-group">
+                <label for="image-file">Image File (Max 5MB): (Input type: file)</label>
+                <input type="file" id="image-file" name="image-file" accept="image/*" required>
+            </div>
+
+            <!-- Optional URL for portfolio link -->
+            <div class="form-group">
+                <label for="portfolio">Photographer Portfolio URL: (Input type: url)</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://yourwebsite.com">
+            </div>
+
+            <!-- Description or story about the photo -->
+            <div class="form-group">
+                <label for="description">Brief Description/Story:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="submit-btn">Submit Photo</button>
+        </form>
+    </main>
+
+    <!-- Footer showing copyright information -->
+    <footer id="footer">
+        <p>© 2025 Urban Photography — All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
